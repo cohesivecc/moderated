@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/moderated.rb",
     "lib/moderated/railtie.rb",
+    "moderated.gemspec",
     "test/helper.rb",
     "test/test_moderated.rb"
   ]
