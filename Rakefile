@@ -15,11 +15,11 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "moderated"
-  gem.homepage = "http://github.com/cohesiveneal/moderated"
+  gem.homepage = "http://github.com/cohesivecc/moderated"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
-  gem.email = "neal@cohesive.cc"
+  gem.summary = %Q{Simple gem for adding content moderation to Active Record models.}
+  gem.description = %Q{Simple gem for adding content moderation to Active Record models.}
+  gem.email = "info@cohesive.cc"
   gem.authors = ["Neal White"]
   # dependencies defined in Gemfile
 end
@@ -32,15 +32,15 @@ Rake::TestTask.new(:test) do |test|
   test.verbose = true
 end
 
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
-end
-
-task :default => :test
+# require 'rcov/rcovtask'
+# Rcov::RcovTask.new do |test|
+#   test.libs << 'test'
+#   test.pattern = 'test/**/test_*.rb'
+#   test.verbose = true
+#   test.rcov_opts << '--exclude "gems/*"'
+# end
+# 
+# task :default => :test
 
 require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
