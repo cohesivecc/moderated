@@ -1,4 +1,4 @@
-require "moderated/railtie"
+require 'moderated/railtie' if defined?(Rails)
 
 # Moderated
 module Moderated #:nodoc:
