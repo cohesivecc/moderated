@@ -87,7 +87,7 @@ module Moderated #:nodoc:
     def unflag!
       self.flagged      = false
       self.moderated_at = Time.now
-      self.save
+      self.save({:validate => false})
       
       self.after_unflag if(self.respond_to?(:after_unflag))
     end
@@ -96,7 +96,7 @@ module Moderated #:nodoc:
       self.flagged      = false
       self.blocked      = true
       self.moderated_at = Time.now
-      self.save(false)
+      self.save({:validate => false})
       
       self.after_block if(self.respond_to?(:after_block))
     end
@@ -104,7 +104,7 @@ module Moderated #:nodoc:
     def unblock!
       self.flagged = self.blocked = false
       self.moderated_at = Time.now
-      self.save(false)
+      self.save({:validate => false})
       
       self.after_unblock if(self.respond_to?(:after_unblock))
     end
