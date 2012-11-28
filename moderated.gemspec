@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "moderated"
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Neal White"]
-  s.date = "2012-11-26"
+  s.date = "2012-11-28"
   s.description = "Simple gem for adding content moderation to Active Record models."
   s.email = "info@cohesive.cc"
   s.extra_rdoc_files = [
